@@ -112,8 +112,9 @@
         </load_composable_node>
     </group>
 
-    <load_composable_node target="PandarContainer">
-        <composable_node pkg="topic_delay" plugin="TopicDelay" name="measure"></composable_node>
-    </load_composable_node>
+    <composable_node pkg="topic_delay" plugin="TopicDelay" name="measure">
+        <param name="cloud_topic" value="pandar_points"/>
+        <param name="packets_topic" value="pandar_packets"/>
+    </composable_node>
 
 </launch>
