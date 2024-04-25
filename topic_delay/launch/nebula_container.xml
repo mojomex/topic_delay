@@ -112,6 +112,8 @@
         </load_composable_node>
     </group>
 
-    <composable_node pkg="topic_delay" plugin="TopicDelay" name="measure"></composable_node>
+    <load_composable_node target="PandarContainer">
+        <composable_node pkg="topic_delay" plugin="TopicDelay" name="measure"></composable_node>
+    </load_composable_node>
 
 </launch>
