@@ -15,6 +15,8 @@ if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif ()
 
 find_package(sensor_msgs REQUIRED)
+find_package(pandar_msgs REQUIRED)
+find_package(nebula_ros REQUIRED)
 
 ## Hesai
 # Hw Interface
@@ -34,6 +36,7 @@ endif()
 
 ament_auto_package(
         INSTALL_TO_SHARE
+        launch
 )
 
 set(ROS_DISTRO $ENV{ROS_DISTRO})

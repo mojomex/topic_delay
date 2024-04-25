@@ -64,6 +64,9 @@
             <param name="diag_span" value="$(var diag_span)"/>
         </composable_node>
 
-        <composable_node pkg="topic_delay" plugin="TopicDelay" name="measure"></composable_node>
+        <composable_node pkg="topic_delay" plugin="TopicDelay" name="measure">
+            <param name="cloud_topic" value="pandar_points"/>
+            <param name="packets_topic" value="pandar_packets"/>
+        </composable_node>
     </node_container>
 </launch>

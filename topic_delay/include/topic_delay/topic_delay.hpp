@@ -16,7 +16,7 @@ namespace ros
 class TopicDelay final : public rclcpp::Node
 {
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_sub_;
-  rclcpp::Subscription<pandar_msgs::msg::PandarScan>::SharedPtr scan_sub_;
+  rclcpp::Subscription<pandar_msgs::msg::PandarScan>::SharedPtr packets_sub_;
 
 public:
   TopicDelay(const rclcpp::NodeOptions & options);
